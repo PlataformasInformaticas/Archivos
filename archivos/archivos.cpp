@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -17,21 +18,12 @@ int main()
         exit(1);
     }
     string linea;
-    /*
+    
     while (getline(fileListado, linea))
     {
-        istringstream iss(line);
-        int a, b;
-        if (!(iss >> a >> b)) { break; } // error
-
-        // process pair (a,b)
-    }
-    */
-
-    while (!fileListado.eof())
-    {
-        fileListado >> linea;
+        istringstream iss(linea);        
         cout << "Elemento: " << linea << endl;
+        
     }
     fileListado.close();
 }
