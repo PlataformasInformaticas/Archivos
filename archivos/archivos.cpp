@@ -29,7 +29,13 @@ int main()
             cout << linea[i] << " - " << linea[linea.length()-1-i] << endl;
         }
         cout << "--------------------" << endl;
-        
+
+        cout << "--------------------" << endl;
+        for (int i = linea.length() - 1; i > -1; i--)
+        {
+            cout << linea[linea.length() - 1 - i] << " - " << linea[i] << endl;
+        }
+        cout << "--------------------" << endl;
     }
     fileListado.close();
 }
