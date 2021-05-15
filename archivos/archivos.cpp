@@ -10,6 +10,7 @@ int main()
     cout << "Hello World!\n";
     ifstream fileListado;
     fileListado.open("listado.txt");
+    cout << "Iniciando lectura de archivo..." << endl;
     if (fileListado.fail())
     {
         cerr << "Error con la lectura" << endl;
