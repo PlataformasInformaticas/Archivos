@@ -23,6 +23,12 @@ int main()
     {
         istringstream iss(linea);        
         cout << "Elemento: " << linea << endl;
+        cout << "--------------------" << endl;
+        for (int i = 0; i < linea.length(); i++)
+        {
+            cout << linea[i] << " - " << linea[linea.length()-1-i] << endl;
+        }
+        cout << "--------------------" << endl;
         
     }
     fileListado.close();
